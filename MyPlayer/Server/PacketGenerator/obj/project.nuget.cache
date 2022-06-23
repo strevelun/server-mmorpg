@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IE6M9EYvKAe52zkhD9w1Gh6J5fYN3N/mDh3g+YqZi5ef/LRR+uFC8850x+uOzSiAFpfF2LJx7Ce12Nwa09UnuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Rookiss\\MMO_Game\\Server\\PacketGenerator\\PacketGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rooki\\.nuget\\packages\\google.protobuf\\3.12.3\\google.protobuf.3.12.3.nupkg.sha512",
+    "C:\\Users\\rooki\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\rooki\\.nuget\\packages\\system.memory\\4.5.2\\system.memory.4.5.2.nupkg.sha512",
+    "C:\\Users\\rooki\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

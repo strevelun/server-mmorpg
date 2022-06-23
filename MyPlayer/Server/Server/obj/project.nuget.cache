@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BAw/rxJMFmxOOTcrpYHeq5NHvthRB0S5Ox68eJt+7Ol0oxvk6p9XApqtGGBpkL4kNgx6Bu7QT5+G2ufTZT3EBA==",
+  "success": true,
+  "projectFilePath": "C:\\Rookiss\\MMO_Game\\Server\\Server\\Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rooki\\.nuget\\packages\\google.protobuf\\3.12.3\\google.protobuf.3.12.3.nupkg.sha512",
+    "C:\\Users\\rooki\\.nuget\\packages\\system.memory\\4.5.2\\system.memory.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}
