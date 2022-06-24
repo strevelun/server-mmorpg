@@ -33,6 +33,8 @@ namespace Server
 			IPAddress ipAddr = ipHost.AddressList[0];
 			IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
 
+			SessionManager.Instance.Init();
+
 			_listener.Init(endPoint, () => { return SessionManager.Instance.Generate(); });
 			Console.WriteLine("Listening...");
 
