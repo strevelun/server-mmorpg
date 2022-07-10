@@ -34,12 +34,11 @@ namespace Server
 			Console.WriteLine("Listening...");
 
 			//FlushRoom();
-			JobTimer.Instance.Push(FlushRoom);
+			//JobTimer.Instance.Push(FlushRoom);
 
-			while (true)
-			{
-				JobTimer.Instance.Flush();
-			}
+			ServerCore.RecvBuffer.InitPool(10240, 1024);
+			
+			Consumer.Instance.ProcessJobQueue();
 		}
 	}
 }

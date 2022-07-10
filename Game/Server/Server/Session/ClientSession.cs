@@ -17,6 +17,7 @@ namespace Server
 
 		public override void OnConnected(EndPoint endPoint)
 		{
+
 			Console.WriteLine($"OnConnected : {endPoint}");
 
 			// PROTO Test
@@ -41,14 +42,15 @@ namespace Server
 			//Program.Room.Push(() => Program.Room.Enter(this));
 		}
 
-		public override void OnRecvPacket(ArraySegment<byte> buffer)
+		public override void OnRecvPacket(RecvBuffer buffer)
 		{
-			PacketManager.Instance.OnRecvPacket(this, buffer);
-		}
+			Consumer.Instance.PushWorker(buffer, PacketHandler.Instance);
+        }
 
 		public override void OnDisconnected(EndPoint endPoint)
 		{
 			SessionManager.Instance.Remove(this);
+			RecvBuffer.Push(_recvBuffer);
 
 			Console.WriteLine($"OnDisconnected : {endPoint}");
 		}
